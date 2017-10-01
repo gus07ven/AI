@@ -47,4 +47,26 @@ public class StrategyTest {
         Assert.assertEquals(3, result4);
         Assert.assertEquals(11, result5);
     }
+
+    @Test
+    public void costFunction3() throws Exception{
+
+        // Arrange
+        Strategy testCostFunc3 = new Strategy();
+        int result, result2, result3, result4, result5;
+
+        // Act
+        result = testCostFunc3.costFunction3(0,1);
+        result2 = testCostFunc3.costFunction3(1,2);
+        result3 = testCostFunc3.costFunction3(2,3);
+        result4 = testCostFunc3.costFunction3(3,4);
+        result5 = testCostFunc3.costFunction3(4,0);
+
+        // Assert
+        Assert.assertEquals(1, result);
+        Assert.assertEquals(9, result2);
+        Assert.assertEquals(25, result3);
+        Assert.assertEquals(49, result4);
+        Assert.assertEquals(16, result5);
+    }
 }
